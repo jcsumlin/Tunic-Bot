@@ -1,5 +1,5 @@
 from .Database import Database
-from create_databases import StarBoardMessages, StarBoardSettings, StarboardAllowedRoles, StarBoardIgnoredChannels
+from create_database import StarBoardMessages, StarBoardSettings, StarboardAllowedRoles, StarBoardIgnoredChannels
 from loguru import logger
 
 
