@@ -4,6 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from create_database import Base
 import os
 
+
 class Database:
     def __init__(self):
         os.environ.get('DB_HOST')
