@@ -2,11 +2,16 @@ version: "3.8"
 services:
   discord-bot:
     build:
-      context: .
-      dockerfile: ./Dockerfile
+      context: ""
+      dockerfile: Dockerfile
   db:
     image: mysql
+    cap_add:
+      - SYS_NICE
     command: --default-authentication-plugin=mysql_native_password
     restart: always
+    ports:
+    - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: supersecretpassword1
+

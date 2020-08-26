@@ -1,3 +1,7 @@
 discord.py
 loguru
+pip
+GitPython
 discord-timers
+sqlalchemy
+PyMySQL
