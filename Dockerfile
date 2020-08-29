@@ -1,5 +1,5 @@
-FROM gorialis/discord.py:full
+FROM python:3
 COPY . /app
 WORKDIR /app
-RUN python -m pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 CMD ["python", "main.py"]
